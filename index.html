@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="app" style="width: 500px; height: 210px; display:flex; flex-direction:column; margin: auto; margin-top: 150px; justify-content: space-around;">
+       <h2 style="color:Red; font-style: oblique;">Crear Constancia</h2>
+        <input type="text" id="nombre" placeholder="nombre" style="padding:10px; text-transform: uppercase;">
+        <input type="number" id="codigo" placeholder="CODIGO/DNI" style="padding:10px">
+        <button onclick="crearPDF()" style="padding:10px; background: rgb(9, 3, 128); color: white; border: none; border-radius: 5px; cursor: pointer;">DESCARGAR PDF</button>
+    </div>
+
+    <script src="https://unpkg.com/jspdf@1.5.3/dist/jspdf.min.js"></script>
+    <script src="./script_jspdf.js"></script>
+</body>
+
+</html>
